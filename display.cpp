@@ -1,0 +1,1 @@
+//This program takes info of student and display it on the screen
