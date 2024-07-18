@@ -2,10 +2,10 @@
 #include<iostream>
 using namespace std;
 
-class Student{
+class student{
     char name[20];
     int roll;
-    int address;
+    char address[20];
     int marks;
 
     public:
@@ -13,9 +13,23 @@ class Student{
     void displaydata();
 };
 
-void Student::getdata(){
-
+void student::getdata(){
+    cout<<"Enter your Name:"<<endl;
+    cin>>name;
+    cout<<"Enter your Roll no:"<<endl;
+    cin>>roll;
+    cout<<"Enter your Address:"<<endl;
+    cin>>address;
+    cout<<"Enter your Total marks:"<<endl;
+    cin>>marks;
 }
-void Student::displaydata(){
+void student::displaydata(){
+    cout<<"Name:"<<name<<'\n'<<"Roll no:"<<roll<<'\n'<<"Address:"<<address<<'\n'<<"Marks:"<<marks<<'\n';
+}
 
+int main(){
+    student s1;
+    s1.getdata();
+    s1.displaydata();
+    return 0;
 }
