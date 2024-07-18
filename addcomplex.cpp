@@ -16,7 +16,7 @@ void complex::getdata(){
     cin>>real>>imag;
 }
 
-void complex::add(complex c1,complex c2){
+void complex::add(complex c1,complex c2){ //passing object
     real=c1.real+c2.real;
     imag=c1.imag+c2.imag;
 }
